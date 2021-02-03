@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,100;1,300&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    transition: 0.2s;
+}
+.bxCard
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.bxCard .card
+{  
+    width: 355px;
+    height: 530px;
+
+    position: relative;
+    box-shadow: 0 10px 15px #00000016;
+    border-radius: 15px;
+}
+.bxCard .card:hover
+{
+    box-shadow: 0 10px 25px #00000025;
+}
+
+.bxCard .card img
+{
+    width: 425px;
+    height: 425px;
+    position: absolute;
+        transform:translate(-50%, -50%);
+        top: 5%;
+        left: 50%;
+    z-index: 1; 
+
+    transition:1.5s;
+}
+.bxCard .card:hover img
+{
+    top: -5%;
+}
+
+.bxCard .card .textHeadphone
+{
+    position: absolute;
+    left: -57%;
+    top: 38%;
+    font-size: 70px;
+    text-transform: uppercase;
+    font-weight: 900;
+    opacity: 0.16;
+    transform: rotate(-90deg);
+}
+.bxCard .card .content
+{
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    width: 70%;
+    position: absolute;
+        transform: translate( -50%, -50%);
+        top: 62%;
+        left: 62%;
+    text-align: center;        
+}
+.bxCard .card .content h2
+{
+    color: #7C2E2E;
+    margin-bottom: 25px;
+}
+.bxCard .card .content .price 
+{
+    display: flex;
+        justify-content: center;
+        align-items: center;
+}
+.bxCard .card .content .price .number
+{
+    font-size: 90px;
+}
+.bxCard .card .content .price .coin
+{
+    font-size: 21px;
+    text-transform: uppercase;
+}
+.bxCard .card .content .color
+{
+    overflow: hidden;
+    height: auto;
+    width: 100%;
+    display: flex;
+        justify-content: center;
+        align-items: center;
+}
+.bxCard .card .content .color .bxColor 
+{
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    overflow: hidden;
+    height: 0px;
+    
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+.bxCard .card:hover .content .color .bxColor
+{
+    height: 75px;
+    visibility: visible;
+    opacity: 1;
+    overflow: visible;
+}
+.bxCard .card .content .color .bxColor p
+{
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.bxCard .card .content .color .bxColor .seletionColor
+{
+    display: flex;
+        justify-content: center;
+        align-items: center;
+}
+.bxCard .card .content .color .bxColor .seletionColor span
+{
+    width: 25px;
+    height: 25px;
+    /* background-color: #B2B3B8; */
+    border-radius: 50%;
+    cursor: pointer;
+}
+.bxCard .card .content .color .bxColor .seletionColor span:nth-child(1)
+{
+    background-color: #41C5FF;
+}.bxCard .card .content .color .bxColor .seletionColor span:nth-child(1).active
+{
+    border: 5px solid #fff;
+    width: 20px;
+    height: 20px;
+    box-shadow: 0 0 6px #00000010;
+}
+.bxCard .card .content .color .bxColor .seletionColor span:nth-child(2)
+{
+    background-color: #F40054;
+    margin: 0 15px;
+}.bxCard .card .content .color .bxColor .seletionColor span:nth-child(2).active
+{
+    border: 5px solid #fff;
+    width: 20px;
+    height: 20px;
+    box-shadow: 0 0 6px #00000010;
+}
+.bxCard .card .content .color .bxColor .seletionColor span:nth-child(3)
+{
+    background-color: #B2B3B8;
+}.bxCard .card .content .color .bxColor .seletionColor span:nth-child(3).active
+{
+    border: 5px solid #fff;
+    width: 20px;
+    height: 20px;
+    box-shadow: 0 0 6px #00000010;
+}
+.bxCard .card .content .buyNow
+{
+    padding: 15px 35px;
+    background-color: #E64E66;
+    border-radius: 3px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 25px;
+    margin-top: 25px;
+}
+.bxCard .card .content .buyNow:hover
+{
+    background-color: #d14056;
+}

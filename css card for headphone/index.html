@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+
+    <title>Headphone css card | Carlos && Ponce</title>
+</head>
+<body>
+
+
+    <div class="bxCard">
+        <div class="card">
+            <img src="hp.png" alt="name headphone">
+            <div class="textHeadphone">
+                <h3>Headphone</h3>
+            </div>
+            <div class="content">
+                <h2>Headphone Name</h2>
+                <p class="price"> <span class="number">45</span><span class="coin">usd</span></p>
+
+                <div class="color">
+                    <div class="bxColor">
+                        <p>color</p>
+                            <div class="seletionColor">
+                                <span class="btnBlue"></span>
+                                <span class="btnRed"></span>
+                                <span class="btnGris active"></span>
+                            </div>
+                    </div>
+                </div>
+                <a class="buyNow" href="#">Buy Now!</a>
+            </div>
+        </div>
+    </div>
+</body>
+    <script>
+        var btnBlue = document.querySelector('.btnBlue');
+        var btnRed = document.querySelector('.btnRed');
+        var btnGris = document.querySelector('.btnGris');
+
+        btnBlue.addEventListener('click', () =>{
+            btnBlue.classList.add('active')
+            btnRed.classList.remove('active')
+            btnGris.classList.remove('active')
+        });
+        btnRed.addEventListener('click', () =>{
+            btnRed.classList.add('active')
+            btnBlue.classList.remove('active')
+            btnGris.classList.remove('active')
+        });
+        btnGris.addEventListener('click', () =>{
+            btnGris.classList.add('active')
+            btnBlue.classList.remove('active')
+            btnRed.classList.remove('active')
+        });
+    </script>
+</html>
